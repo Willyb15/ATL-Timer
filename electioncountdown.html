@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body onload="doomsday.reset();">
+<h1>ATLiens Invade</h1>
+<h2>Countdown Ends... (you decide)</h2>
+
+<form id="doomsday">
+    <input type="date" id="doomsdayyear" value="" placeholder="Year">
+    <!-- <input type="date" id="doomsdaymonth" value="" placeholder="Month">
+    <input type="date" id="doomsdayday" value="" placeholder="Day"> -->
+    <input type="button" onclick="startDoomsDay();"  value="Start Countdown">
+</form>
+
+
+<h3 id="test"></h3>
+<div id="countdown-wrapper">
+    <div class="time-wrapper">
+        <div id="weeks"></div>
+        <div class="time-text">Weeks</div>
+    </div>
+    <div class="time-wrapper">
+        <div id="days"></div>
+        <div class="time-text">Days</div>
+    </div>
+
+    <div class="time-wrapper">
+        <div id="hours"></div>
+        <div class="time-text">Hours</div>
+    </div>
+
+    <div class="time-wrapper">
+        <div id="minutes"></div>
+        <div class="time-text">Minutes</div>
+    </div>
+
+    <div class="time-wrapper">
+        <div id="seconds"></div>
+        <div class="time-text">Seconds</div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

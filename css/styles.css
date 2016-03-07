@@ -1,0 +1,48 @@
+body{
+	text-align: center;
+	background-color: black;
+    background-repeat:no-repeat;
+    color: white;
+    /*background-image: url("https://i.ytimg.com/vi/hq9qRH2xmP4/maxresdefault.jpg");*/
+    background
+}
+
+h1{
+	background-color: blue;
+	font-size:60px;
+	padding: 10px;
+    margin: auto;
+
+}
+
+h2{
+	background-color: red;
+	font-size:40px;
+    margin: auto;
+}
+
+
+#countdown-wrapper > div {
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 3px;
+	background:#444DDD;
+	display: inline-block;
+    margin-top: 15%;
+    height: 70px;
+
+
+
+}
+
+.time-wrapper {
+	padding: 15px
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.time-text{
+	padding-top: 5px;
+	font-size:20px;
+	display: inline-block;
+}
