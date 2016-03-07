@@ -67,10 +67,10 @@ function startDoomsDay() {
 	//console.log(date);
 	var doomsday = Date.parse(doomsdayyear);
 	console.log(doomsday);
-	var interval = setInterval(initTimer, 500,doomsday);
+	var interval = setInterval(initTimer,500,doomsday);
 	
-	////if (doomsdaytest === NaN) {
-	////	clearInterval(interval);
+	//if (doomsdaytest === NaN) {
+	//	clearInterval(interval);
 	//}
 
 }
