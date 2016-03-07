@@ -1,3 +1,6 @@
+//Hide "count-down" on page load
+document.getElementById("countdown-wrapper").style.display = "none";
+
 // Grab Elements By Id's to manipulate innerHTML later
 // Inputing time remaining til doomsday
 
@@ -56,22 +59,25 @@ function initTimer(doomsday){
 }
 
 
-// updates timer every 1000ms. 1000ms is 1 second.
+// updates timer every.
 function startDoomsDay() {
-
+	clearInterval(interval);
 	var doomsdayyear = document.getElementById("doomsdayyear").value;
 	var doomsdaymonth = document.getElementById("doomsdaymonth").value;
 	var doomsdayday = document.getElementById("doomsdayday").value;
 	var doomsdaytest = doomsdayyear +"/"+doomsdaymonth +"/"+ doomsdayday;
+	// var doomsdaytest = isNaN(doomsdaytest);
 	console.log(doomsdaytest);
 	// console.log(date);
 	var doomsday = Date.parse(doomsdayyear);
 	console.log(doomsday);
 	var interval = setInterval(initTimer,500,doomsday);
+
+	document.getElementById("countdown-wrapper").style.display = "block";
 	
-	if (doomsdaytest <= 1) {
-		document.getElementById("countdown-wrapper").style.display = "none";
-		clearInterval(interval);
-	}
+	// if (doomsdaytest===true) {
+	// 	clearInterval(interval);
+	// }
+	
 
 }
