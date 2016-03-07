@@ -27,6 +27,12 @@ h2{
 form{
 	
 	background: black;
+	display: block;
+}
+
+input[type="button"] {
+	margin-top: 15px;
+
 }
 
 #countdown-wrapper > div {

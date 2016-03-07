@@ -60,17 +60,18 @@ function initTimer(doomsday){
 function startDoomsDay() {
 
 	var doomsdayyear = document.getElementById("doomsdayyear").value;
-	// var doomsdaymonth = document.getElementById("doomsdaymonth").value;
-	// var doomsdayday = document.getElementById("doomsdayday").value;
-	// var doomsdaytest = doomsdayyear +"/"+doomsdaymonth +"/"+ doomsdayday;
-	// console.log(doomsdaytest);
-	//console.log(date);
+	var doomsdaymonth = document.getElementById("doomsdaymonth").value;
+	var doomsdayday = document.getElementById("doomsdayday").value;
+	var doomsdaytest = doomsdayyear +"/"+doomsdaymonth +"/"+ doomsdayday;
+	console.log(doomsdaytest);
+	// console.log(date);
 	var doomsday = Date.parse(doomsdayyear);
 	console.log(doomsday);
 	var interval = setInterval(initTimer,500,doomsday);
 	
-	//if (doomsdaytest === NaN) {
-	//	clearInterval(interval);
-	//}
+	if (doomsdaytest <= 1) {
+		document.getElementById("countdown-wrapper").style.display = "none";
+		clearInterval(interval);
+	}
 
 }
