@@ -1,4 +1,4 @@
-#A countdown to 2016 election day done in native JavaScript.
+#A countdown timer with a dropdown menu selector created in native JavaScript.
 
 This counter does not use any jQuery plugins or dependencies
 
